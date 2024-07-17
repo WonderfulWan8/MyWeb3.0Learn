@@ -15,9 +15,9 @@ contract DataLocation{
         // call _f with state variables
         _f(arr, map, myStructs[1]);
 
-        // 从mapping中读取一个结构体
+        // 从mapping中读取一个mapping
         MyStruct storage myStruct = myStructs[1];
-        // 在内存中创建一个结构体
+        // 在内存中创建一个mapping
         MyStruct memory myMemStruct = myStructs[0];
     }
     function _f(uint256[] storage _arr,mapping (uint256 => address) storage _map,MyStruct storage _myStruct) internal {
